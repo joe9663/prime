@@ -20,7 +20,7 @@ $crio_icons = function( $options ) { ?>
 	</div>
 <?php }; ?>
 
-<div class="boldgrid-section" data-image-url="<?php $crio_image_path( 'building-perspective.jpg' ) ?>" style="color: #fff; background-position: 50% 25%; background-size: cover;background-image: url(<?php $crio_image_path( 'building-perspective.jpg' ) ?>)">
+<div class="boldgrid-section" data-image-url="<?php $crio_image_path( 'building-perspective.jpg' ) ?>" style="color: #fff; background-position: 50% 55%; background-size: cover;background-image: url(<?php $crio_image_path( 'building-perspective.jpg' ) ?>)">
 	<div class="container">
 		<div class="row" style="padding-top: 70px; padding-bottom: 140px;">
 			<div class="col-md-7 col-sm-12 col-xs-12">
@@ -39,7 +39,7 @@ $crio_icons = function( $options ) { ?>
 				<?php $crio_divider(); ?>
 				<p style="margin-bottom: 2em;">Executing big data with the aim to improve overall outcomes. Build user stories so that as an end result, we create actionable insights. Engage audience segments and above all, use best practice. Target key demographics while remembering to get buy in.</p>
 				<p style="margin-bottom: 2em;">Generating dark social so that as an end result, we use best practice. Synchronizing first party data so that we be transparent.</p>
-				<p style="margin-bottom: 2em;"><a href="#" class="button-primary">Learn More</a></p>
+				<p class="" style="margin-bottom: 2em;"><a class="button-primary" href="#">Learn More</a> <a class="button-secondary" href="#">Buy Now</a></p>
 			</div>
 			<div class="col-md-1 col-sm-1 col-xs-12"></div>
 			<div class="col-md-5 col-sm-4 col-xs-12 align-column-center">
@@ -77,7 +77,7 @@ $crio_icons = function( $options ) { ?>
 		</div>
 		<div class="row row-spacing-lg-bottom">
 			<div class="col-md-5 col-sm-4 col-xs-12">
-				<img class="aligncenter bg-img bg-img-3" src="<?php $crio_image_path( 'man-on-computer.jpg' ) ?>">
+				<img class="aligncenter bg-img bg-img-3" src="<?php $crio_image_path( 'woman-working.jpg' ) ?>">
 				<h4 class="" style="margin-top: 1em; font-size: 1.2em; text-align: center;">Sam Wood</h4>
 				<p class="" style="text-align: center;">Product Management</p>
 			</div>
@@ -87,7 +87,7 @@ $crio_icons = function( $options ) { ?>
 				<p style="margin-bottom: 2em;">Generate vertical integration while remembering to increase viewability. Grow social with the aim to increase viewability. Lead vertical integration in turn innovate.</p>
 				<p style="margin-bottom: 2em;">Repurpose customer jounreys with the aim to come up with a bespoken solution. Growing benchmarking so that we build ROI.</p>
 				<p style="margin-bottom: 2em;">Engage benchmarking to, consequently, take this offline. Execute user experience to go viral. Funneling sprints and possibly improve overall outcomes.</p>
-				<p class="" style="margin-bottom: 2em;"><a href="#" class="button-primary">Meet the Team</a></p>
+				<p class="" style="margin-bottom: 2em;"><a href="#" class="button-secondary">Meet the Team</a></p>
 			</div>
 		</div>
 	</div>
