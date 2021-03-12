@@ -71,7 +71,7 @@ $template_has_title  = get_post_meta( $has_header_template, 'crio-premium-templa
 						<?php get_template_part( 'templates/page-headers' ); ?>
 					<?php endif; ?>
 					<?php do_action( 'boldgrid_main_top' ); ?>
-					<?php require get_theme_file_path( 'index.php' ); ?>
+					<?php require Boldgrid_Framework_Wrapper::boldgrid_template_path(); ?>
 					<?php do_action( 'boldgrid_main_bottom' ); ?>
 				</main><!-- /.main -->
 				<?php if ( BoldGrid::display_sidebar() && ( ( function_exists( 'is_woocommerce' ) && is_woocommerce() ) || 'above' !== get_theme_mod( 'bgtfw_global_title_position' ) ) ) : ?>
