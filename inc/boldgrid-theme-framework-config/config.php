@@ -492,19 +492,24 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		// Set the default link color of the social menu location.
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_social']['default'] = 'color-1';
 		$config['customizer']['controls']['bgtfw_menu_items_link_color_footer-social']['default'] = 'color-1';
+		$config['customizer']['controls']['bgtfw_menu_items_link_color_sticky-social']['default'] = 'color-1';
 
 		// Set the default link hover state color of the social menu location.
 		$config['customizer']['controls']['bgtfw_menu_items_hover_color_social']['default'] = 'color-3';
 		$config['customizer']['controls']['bgtfw_menu_items_hover_color_footer-social']['default'] = 'color-3';
+		$config['customizer']['controls']['bgtfw_menu_items_hover_color_sticky-social']['default'] = 'color-3';
 
 		// Set the default hover effect for the social menu location.
 		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_social']['default'] = 'hvr-underline-from-center';
 		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_footer-social']['default'] = 'hvr-underline-from-center';
+		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_sticky-social']['default'] = 'hvr-underline-from-center';
+
 
 
 		// Set social menu active link color defaults in case other menu items are assigned to this location.
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_social']['default'] = 'color-3';
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_footer-social']['default'] = 'color-3';
+		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_sticky-social']['default'] = 'color-3';
 
 
 		// Set the social media icon size.
@@ -572,6 +577,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 						'type' => 'boldgrid_site_identity',
 						'key' => 'branding',
 						'align' => 'w',
+						'uid' => 's47',
 						'display' => [
 							[
 								'selector' => '.custom-logo',
@@ -594,6 +600,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 						'type' => 'boldgrid_menu_sticky-main',
 						'key' => 'menu',
 						'align' => 'e',
+						'uid' => 's48',
 					],
 				],
 			],
@@ -627,7 +634,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 						'align' => 'w',
 					],
 					[
-						'type' => 'boldgrid_menu_social',
+						'type' => 'boldgrid_menu_footer-social',
 						'key' => 'menu',
 						'align' => 'e',
 					],
