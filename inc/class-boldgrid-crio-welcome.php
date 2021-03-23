@@ -35,8 +35,11 @@ class Boldgrid_Crio_Welcome {
 	 * @since 2.0.0
 	 */
 	public function add_admin_menu() {
-		if ( is_plugin_active( 'crio-premium/crio-premium.php' ) ) {
-			return;
+		if ( is_plugin_active( 'crio-premium/crio-premium.php' ) && class_exists( 'Crio_Premium' ) ) {
+			$crio_premium = new Crio_Premium();
+			if ( $crio_premium->validate() ) {
+				return;
+			}
 		}
 
 		$menus    = $GLOBALS['menu'];
@@ -51,7 +54,7 @@ class Boldgrid_Crio_Welcome {
 			'edit_theme_options',
 			'crio',
 			array( $this, 'page_welcome' ),
-			'',
+			get_template_directory_uri() . '/images/crio_logo.svg',
 			$priority
 		);
 
