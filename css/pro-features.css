@@ -135,7 +135,7 @@
 
 .pro-cards-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-left:-20px;
 	margin-right:20px;
 	max-width: 100%;
@@ -194,28 +194,29 @@
     font-size: 30px;
 }
 
-.cta-heading-container {
+.cta {
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0px;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+	text-align: center;
 }
 
 h2.cta-heading {
-	padding-top: 0px;
-    color: #f95b26;
+	font-weight: 400;
+	color: #f95b26;
+	margin-top: 0px;
 }
+
 a.cta-button {
     background-color: #f95b26;
     border: none;
     color: #fff;
     text-decoration: none;
-    font-family: "Exo 2";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 40px;
-    padding: 15px 40px;
+    font-size: 1em;
+    font-weight: 600;
+	padding: 10px 40px;
+	margin: 0 auto;
 }
 
 a.cta-button:hover {
