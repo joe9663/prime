@@ -15,7 +15,7 @@ if ( ! defined( 'WPINC' ) ) {
  * it's function is defined in the class
  * Boldgrid_Framework_Pro_Feature_Cards.
  */
-$go_pro_url = 'https://www.boldgrid.com/central/checkout/crio?utm_source=Crio_-_Pro_Features&utm_medium=CTA_Button&utm_campaign=Crio_Pro_Features';
+$go_pro_url = apply_filters( 'bgtfw_upgrade_url_pro_features', null );
 
 ?>
 
@@ -28,9 +28,9 @@ $go_pro_url = 'https://www.boldgrid.com/central/checkout/crio?utm_source=Crio_-_
 	</div>
 	<div class="pro-feature-image">
 		<img src="<?php echo esc_url( get_template_directory_uri() ) . '/images/welcome/custom-page-headers.png'; ?>"></img>
-		<div class="cta-heading-container">
+		<div class="cta">
 			<h2 class="cta-heading">Crio Pro</h2>
-			<a class="cta-button" href="<?php echo esc_url( $go_pro_url ); ?>&utm_content=Upgrade_Now " target="_blank">Upgrade Now</a>
+			<a class="cta-button" href="<?php echo esc_url( $go_pro_url ); ?>&utm_content=Go_Pro " target="_blank">Go Pro</a>
 		</div>
 	</div>
 <?php
