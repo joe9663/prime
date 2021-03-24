@@ -13,11 +13,18 @@ The last command creates a new .zip file for a WordPress theme called `Prime` at
 
 ## Changelog
 
+
 ### 2.7.0 ###
 * New Feature: Header layout presets.
 * New Feature: Partial Refresh enabled for more header elements in customizer.
 * New Feature: Replaced Column Width controls with new multi-sliders.
 * Note: Skipped 2.6.0 for more consistent versioning with BGTFW & Crio releases.
+
+### 2.5.2 ###
+Bug Fix: Update 'Tested to' to 5.7
+
+### 2.5.1 ###
+Bug Fix: Fix responsiveness of Pro Features Page.
 
 ### 2.5.0 ###
 New Feature: Added a 'Crio' top level menu page, moved the welcome page there, and added a 'Get Pro' page to highlight new premium features.
