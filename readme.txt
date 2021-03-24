@@ -4,7 +4,7 @@ Tags: news, blog, e-commerce, sticky-post, theme-options, threaded-comments, ful
 Requires PHP: 5.6
 Requires at least: 4.8
 Tested up to: 5.7
-Stable tag: 2.5.1
+Stable tag: 2.7.0
 License: GPL-3.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
@@ -15,7 +15,13 @@ Prime is a WordPress SuperTheme that allows designers, developers and other web 
 
 == Changelog ==
 
-= 2.5.1 =
+= 2.7.0 =
+* New Feature: Header layout presets.
+* New Feature: Partial Refresh enabled for more header elements in customizer.
+* New Feature: Replaced Column Width controls with new multi-sliders.
+* Note: Skipped 2.6.0 for more consistent versioning with BGTFW & Crio releases.
+
+= 2.5.2 =
 Bug Fix: Updated 'Tested to' to 5.7
 
 = 2.5.1 =
