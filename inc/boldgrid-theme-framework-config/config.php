@@ -484,8 +484,6 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_footer-social']['default'] = 'hvr-underline-from-center';
 		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_sticky-social']['default'] = 'hvr-underline-from-center';
 
-
-
 		// Set social menu active link color defaults in case other menu items are assigned to this location.
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_social']['default'] = 'color-4';
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_footer-social']['default'] = 'color-4';
