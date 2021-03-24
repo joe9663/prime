@@ -488,6 +488,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Set social menu active link color defaults in case other menu items are assigned to this location.
 		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_social']['default'] = 'color-4';
+		$config['customizer']['controls']['bgtfw_menu_items_active_link_color_footer-social']['default'] = 'color-4';
 
 		// Set the social media icon size.
 		$config['social-icons']['size'] = 'large';
