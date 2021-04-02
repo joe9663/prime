@@ -481,7 +481,7 @@ if ( ! function_exists( 'boldgrid_prime_framework_config' ) ) {
 
 		// Set the default hover effect for the social menu location.
 		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_social']['default'] = 'hvr-underline-from-center';
-		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_footer-social']['default'] = 'hvr-underline-from-center';
+		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_footer-social']['default'] = '';
 		$config['customizer']['controls']['bgtfw_menu_items_hover_effect_sticky-social']['default'] = 'hvr-underline-from-center';
 
 		// Set social menu active link color defaults in case other menu items are assigned to this location.
