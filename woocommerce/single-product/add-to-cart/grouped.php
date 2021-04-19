@@ -10,9 +10,9 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see https://docs.woocommerce.com/document/template-structure/
- * @package WooCommerce/Templates
- * @version 4.0.0
+ * @see     https://docs.woocommerce.com/document/template-structure/
+ * @package WooCommerce\Templates
+ * @version 4.8.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -36,6 +36,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				),
 				$product
 			);
+			$show_add_to_cart_button = false;
 
 			do_action( 'woocommerce_grouped_product_list_before', $grouped_product_columns, $quantites_required, $product );
 
@@ -45,7 +46,11 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				$post               = $post_object; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 				setup_postdata( $post );
 
-				echo '<tr id="product-' . esc_attr( $grouped_product_child->get_id() ) . '" class="woocommerce-grouped-product-list-item ' . esc_attr( implode( ' ', function_exists( 'wc_get_product_class' ) ? wc_get_product_class( '', $grouped_product_child->get_id() ) : get_post_class() ) ) . '">';
+				if ( $grouped_product_child->is_in_stock() ) {
+					$show_add_to_cart_button = true;
+				}
+
+				echo '<tr id="product-' . esc_attr( $grouped_product_child->get_id() ) . '" class="woocommerce-grouped-product-list-item ' . esc_attr( implode( ' ', wc_get_product_class( '', $grouped_product_child ) ) ) . '">';
 
 				// Output columns for each product.
 				foreach ( $grouped_product_columns as $column_id ) {
@@ -107,7 +112,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" />
 
-	<?php if ( $quantites_required ) : ?>
+	<?php if ( $quantites_required && $show_add_to_cart_button ) : ?>
 
 		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
