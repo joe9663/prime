@@ -51,7 +51,7 @@ class Boldgrid_Crio_Welcome {
 			'edit_theme_options',
 			'crio',
 			array( $this, 'page_welcome' ),
-			'',
+			get_template_directory_uri() . '/images/crio-logo.svg',
 			$priority
 		);
 
